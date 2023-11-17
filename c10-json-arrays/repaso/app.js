@@ -43,13 +43,11 @@ let capital = autosJS.reduce(function (acumulador, auto) {
 }, valorInicial)
 console.log(capital); */
 
-let frase = "ABCD"
-
-let nuevaFrase = autosJS.reduce(function(acum, auto){
+/* let nuevaFrase = autosJS.reduce(function(acum, auto){
     return acum + auto.model + "***"
 }, "")
 
-console.log(nuevaFrase);
+console.log(nuevaFrase); */
 
 
 
