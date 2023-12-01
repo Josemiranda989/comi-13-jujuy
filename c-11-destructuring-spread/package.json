@@ -1,0 +1,13 @@
+{
+  "name": "c-11-destructuring-spread",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "burger": "node burger/hamburgueseria.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

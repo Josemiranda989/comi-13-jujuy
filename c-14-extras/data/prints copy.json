@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Ender",
+        "model": "3SE",
+        "price": 400
+    },
+    {
+        "id": 2,
+        "name": "Bamboolab",
+        "model": "3SE",
+        "price": 200
+    },
+    {
+        "id": 3,
+        "name": "Anicubic",
+        "model": "2",
+        "price": 100
+    }
+]

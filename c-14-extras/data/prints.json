@@ -1,0 +1,20 @@
+[
+ {
+  "id": 1,
+  "name": "Ender",
+  "model": "3SE",
+  "price": 691.1999999999999
+ },
+ {
+  "id": 2,
+  "name": "Bamboolab",
+  "model": "3SE",
+  "price": 345.59999999999997
+ },
+ {
+  "id": 3,
+  "name": "Anicubic",
+  "model": "2",
+  "price": 172.79999999999998
+ }
+]

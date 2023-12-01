@@ -1,0 +1,86 @@
+[
+ {
+  "nombre": "bigmac",
+  "id": 1,
+  "precio": 3500,
+  "descuento": 20
+ },
+ {
+  "nombre": "cuarto de libra",
+  "id": 2,
+  "precio": 4500,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ },
+ {
+  "nombre": "vegetariana",
+  "id": 3,
+  "precio": 2000,
+  "descuento": 10
+ }
+]
