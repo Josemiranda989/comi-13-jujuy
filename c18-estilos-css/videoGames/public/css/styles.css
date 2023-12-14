@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #45d8ac;
+    text-decoration: none;
+}
+
+/* img {
+    opacity: 0.6;
+} */
+
+/* ul.header__links li a {
+    color: #4a45d8;
+} */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #04744d;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+
+/* MAIN */
+.main {
+    background: linear-gradient(90deg, rgb(188, 186, 235) 0%, rgba(9, 121, 37, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.main__title {
+    text-align: center;
+}
+
+.products img {
+    opacity: 0.7;
+}
+
+.products article h4 {
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+.footer {
+/*     background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/printer_icon_145945.png'); */
+    height: 100px;
+    background-size: contain;
+    background-color: #45d8ac;
+    opacity: 0.7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(67, 67, 21);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
