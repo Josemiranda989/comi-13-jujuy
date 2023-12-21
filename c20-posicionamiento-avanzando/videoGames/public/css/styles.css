@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #45d8ac;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 20px;
+}
+
+/* img {
+    opacity: 0.6;
+} */
+
+/* ul.header__links li a {
+    color: #4a45d8;
+} */
+
+body {
+    font-family: 'Edu TAS Beginner', cursive;
+    background: linear-gradient(90deg, rgb(188, 186, 235) 0%, rgba(9, 121, 37, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* HEADER */
+.header {
+    background-color: #04744d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__links {
+    /* display: none; */
+    display: flex;
+    gap: 20px;
+
+}
+
+.link__login {
+    order: -1
+}
+
+.link__products {
+    order: 1
+}
+
+/* MAIN */
+/* .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.main__title {
+    text-align: center;
+}
+
+.products {
+    width: 80%;
+    border: dotted 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #cac3c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.product__item {
+    width: 270px;
+    background-color: #cebd80;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.products img {
+    opacity: 0.7;
+}
+
+.products article h4 {
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+.footer {
+    /*     background-image: url('https://cdn.icon-icons.com/icons2/2406/PNG/512/printer_icon_145945.png'); */
+    height: 100px;
+    background-size: contain;
+    background-color: #45d8ac;
+    opacity: 0.7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(67, 67, 21);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.d__flex__prueba {
+    display: flex;
+    margin: 20px;
+    background-color: #5b16fd;
+    width: 50%;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.a {
+    background-color: red;
+    flex-grow: .3;
+    padding: 40px;
+    border-radius: 100%;
+}
+
+.b {
+    background-color: rgb(60, 192, 57);
+    flex-grow: 0.3;
+    padding: 40px;
+    border-radius: 100%;
+
+}
+
+.c {
+    background-color: rgb(134, 126, 173);
+    flex-grow: 0.3;
+    padding: 40px;
+    border-radius: 100%;
+
+}
+
+@media (min-width: 600px) {
+    /*     .header__links {
+        display: block;
+    } */
+}
