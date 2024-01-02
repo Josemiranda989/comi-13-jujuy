@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/create-product.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <title>PrintAll</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="/img/printAll.png" alt="logo-printall" />
+        <ul class="header__links">
+            <li class="link__products"><a href="#">Productos</a></li>
+            <li><a href="#">Acerca de mi</a></li>
+            <li class="link__login"><a href="#">Ingresar</a></li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <form class="form" action="#" method="get">
+            <div class="form__group">
+                <label for="name">Nombre del producto:</label>
+                <input type="text" name="name" id="name" placeholder="por ej. Ender 3">
+            </div>
+
+            <div class="form__group">
+                <label for="price">Precio:</label>
+                <input type="number" name="price" id="price" min="0" value="0">
+            </div>
+
+            <div class="form__group">
+                <label for="brand">Marca:</label>
+                <select name="brand" id="brand">
+                    <option value="creality">Creality</option>
+                    <option value="bambu">Bambulab</option>
+                    <option value="prusa" selected>Prusa</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" name="quantity" id="quantity" value="1">
+            </div>
+
+            <div class="form__group">
+                <label for="quantity">Imagen:</label>
+                <input type="file" disabled>
+            </div>
+
+            <div class="form__group">
+                <label for="terms">Aceptar terminos y condiciones:</label>
+                <input type="checkbox" name="terms" id="terms" required>
+            </div>
+
+            <div class="form__group">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </div>
+            <!-- <input type="submit" value="Enviar"> -->
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados a PrintAll Tuc</p>
+    </footer>
+</body>
+
+</html>
