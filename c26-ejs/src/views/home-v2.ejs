@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/header.ejs') %>
+
+            <img src="images/img-home-banner.jpg" alt="home-baner" class="imagen-header">
+
+            <main>
+
+                <h2>Basado en tu última visita</h2>
+                <section class="contenedor-section">
+
+                    <% productList.forEach(product=> { %>
+                        <%- include('./partials/product.ejs', {product}) %>
+                            <% }) %>
+
+
+                </section>
+                <h2>Sección de Ofertas</h2>
+                <section class="contenedor-section">
+                    <article class="contenedor-producto">
+                        <img src="./images/img-cafetera-moulinex.jpg" alt="" class="imagen-producto">
+                        <div class="contenedor-descripcion">
+                            <p class="logo-envio"><i class="fa-solid fa-truck"></i></p>
+                            <p class="precios">$6.770</p>
+                            <p class="descuentos">40% OFF</p>
+                            <h4 class="descripciones">Cafetera Moulinex</h4>
+                        </div>
+                    </article>
+                    <article class="contenedor-producto">
+                        <img src="./images/img-macbook-pro-2019.jpg" alt="" class="imagen-producto">
+                        <div class="contenedor-descripcion">
+                            <p class="logo-envio"><i class="fa-solid fa-truck"></i></p>
+                            <p class="precios">$230.000</p>
+                            <p class="descuentos">20% OFF</p>
+                            <h4 class="descripciones">MacBook Pro 2019</h4>
+                        </div>
+                    </article>
+                    <article class="contenedor-producto">
+                        <img src="./images/img-samsung-galaxy-s10.jpg" alt="" class="imagen-producto">
+                        <div class="contenedor-descripcion">
+                            <p class="logo-envio"><i class="fa-solid fa-truck"></i></p>
+                            <p class="precios">$70.500</p>
+                            <p class="descuentos">10% OFF</p>
+                            <h4 class="descripciones">Samsung Galaxy S10</h4>
+                        </div>
+                    </article>
+                    <article class="contenedor-producto">
+                        <img src="./images/img-tv-samsung-smart.jpg" alt="" class="imagen-producto">
+                        <div class="contenedor-descripcion">
+                            <p class="logo-envio"><i class="fa-solid fa-truck"></i></p>
+                            <p class="precios">$23.200</p>
+                            <p class="descuentos">5% OFF</p>
+                            <h4 class="descripciones">SmartTv Samsung 43"</h4>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>

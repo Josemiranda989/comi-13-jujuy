@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+
+    <body>
+        <%- include('./partials/header.ejs') %>
+            <main>
+                <section class="register">
+                    <div class="form-title">
+                        <h1>Ingrese sus datos</h1>
+                    </div>
+                    <form action="/" method="GET">
+                        <div>
+                            <input class="wide-input" type="text" placeholder="Nombre y apellido"
+                                name="nombre-y-apellido" pattern="[a-zA-Z]">
+                        </div>
+                        <div>
+                            <input class="wide-input" type="text" placeholder="Nombre de usuario" name="usuario"
+                                pattern="[\w]">
+                        </div>
+                        <div>
+                            <input class="wide-input" type="email" placeholder="E-mail" name="email"
+                                pattern="/^\w+([.-_+]?\w+)@\w+([.-]?\w+)(.\w{2,10})+$/">
+                        </div>
+                        <h4>Fecha de Nacimiento</h4>
+                        <div>
+                            <input class="wide-input" type="date" placeholder="mm/dd/yyyy" name="nacimiento">
+                        </div>
+                        <div>
+                            <input class="wide-input" type="text" placeholder="Domicilio" name="domicilio">
+                        </div>
+                        <h4>Perfil del usuario</h4>
+                        <div class="option-input">
+                            <input type="radio" name="perfil" id="comprador">
+                            <label for="comprador">Comprador</label>
+                            <input type="radio" name="perfil" id="vendedor">
+                            <label for="vendedor">Vendedor</label>
+                        </div>
+                        <h4 for="">Intereses</h4>
+                        <div class="option-input">
+                            <input type="checkbox" name="intereses" id="electro">
+                            <label for="electro">Electro</label>
+                            <input type="checkbox" name="intereses" id="moda">
+                            <label for="moda">Moda</label>
+                            <input type="checkbox" name="intereses" id="hogar">
+                            <label for="hogar">Hogar</label>
+                            <input type="checkbox" name="intereses" id="jugueteria">
+                            <label for="jugueteria">Juguetería</label>
+                            <input type="checkbox" name="intereses" id="vida-sana">
+                            <label for="vida-sana">Vida sana</label>
+                        </div>
+                        <div>
+                            <h4>Foto de perfil</h4>
+                            <input class="wide-input" type="file" name="foto-perfil">
+                        </div>
+                        <div>
+                            <input class="wide-input" type="password" name="contraseña" id="contraseña"
+                                placeholder="Contraseña">
+                        </div>
+                        <div>
+                            <input class="wide-input" type="password" name="confirmar-contraseña" id="contraseña"
+                                placeholder="Confirmar contraseña">
+                        </div>
+                        <div class="button-div">
+                            <input class="button-input" type="reset">
+                            <input class="button-input" type="submit">
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+</html>
