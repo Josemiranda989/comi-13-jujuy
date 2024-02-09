@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "fullName": "Jav Herrera",
+        "email": "javi@dh.com",
+        "password": "$2a$10$kbHNepDXku1qKDytFK3RpuLtkW/dqMGDi4jXL7lNQUF8lm1HZ2.N.",
+        "country": "Colombia",
+        "avatar": "1609285636788_img.jpg"
+    },
+    {
+        "id": 2,
+        "fullName": "Eliseo",
+        "email": "eli@gmail.com",
+        "password": "$2a$10$j6qWA0G3aeEAAZbJNsbOdusQxp96nBwIP9U6Jt1Z3Wd8oxoJ7G0.C",
+        "country": "Argentina",
+        "avatar": "1707434189285_img.png"
+    },
+    {
+        "id": 3,
+        "fullName": "Elise3",
+        "email": "eli2@gmail.com",
+        "password": "$2a$10$X29Y0Q9Zzuyh7xBoJ.aY3.olq1fXhE8Dr7Bq6koUhYwjxApQM8Y.K",
+        "country": "Argentina",
+        "avatar": "1707434286636_img.png"
+    }
+]
