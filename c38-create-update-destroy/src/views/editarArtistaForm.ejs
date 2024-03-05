@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear nuevo artista</title>
+</head>
+<body>
+    <h1>Editar un Artista</h1>
+    <form action="/editarArtista/<%= artista.id %>?_method=PUT" method="post">
+        <label for="">Ingrese un nombre</label>
+        <input type="text" name="nombre" placeholder="Charango" value=<%= artista.nombre %>>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="/eliminarArtista/<%= artista.id %>?_method=DELETE" method="post">
+        <button type="submit">Eliminar </button>
+    </form>
+</body>
+</html>
