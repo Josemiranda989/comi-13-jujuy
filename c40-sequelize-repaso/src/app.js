@@ -6,8 +6,8 @@ const port = 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use("/products", require("./routes/products.routes"));
-app.use("/categories", require("./routes/categories.routes"));
+app.use("/api/products", require("./routes/products.routes"));
+app.use("/api/categories", require("./routes/categories.routes"));
 
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
