@@ -1,4 +1,5 @@
 const { Product } = require("../database/models");
+const sequelize = require("sequelize");
 
 module.exports = {
   getList: async (req, res) => {
@@ -7,6 +8,15 @@ module.exports = {
         include: ["categories"],
         attributes: {
           exclude: ["categoryId"],
+          // Agregar el campo extra "url" utilizando la función sequelize.literal
+          include: [
+            [
+              sequelize.literal(
+                `CONCAT('http://localhost:3000/product/', Product.id)`
+              ),
+              "url",
+            ],
+          ],
         },
       });
 
