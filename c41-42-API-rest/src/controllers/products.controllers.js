@@ -1,18 +1,17 @@
 const { Product } = require("../database/models");
 const sequelize = require("sequelize");
 
+const URL = "http://localhost:3000";
+
 module.exports = {
   getList: async (req, res) => {
     try {
       const lists = await Product.findAll({
-        include: ["categories"],
         attributes: {
-          exclude: ["categoryId"],
-          // Agregar el campo extra "url" utilizando la función sequelize.literal
           include: [
             [
               sequelize.literal(
-                `CONCAT('http://localhost:3000/product/', Product.id)`
+                `CONCAT('${URL}/api/products/detail/', Product.id)`
               ),
               "url",
             ],
