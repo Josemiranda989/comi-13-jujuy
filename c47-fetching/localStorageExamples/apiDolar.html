@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Dolar Api LocalStorage
+    <div></div>
+
+    <script>
+      window.addEventListener("load", () => {
+        if (localStorage.getItem("dolar") == null) {
+          fetch("https://dolarapi.com/v1/dolares")
+            .then((res) => res.json())
+            .then((dolar) => {
+              console.log(dolar);
+              localStorage.setItem("dolar", JSON.stringify(dolar));
+            });
+        }
+
+        let dolarParsed = JSON.parse(localStorage.getItem("dolar"));
+        console.log("🚀 ~ window.addEventListener ~ dolarParsed:", dolarParsed);
+
+        dolarParsed.forEach((element) => {
+          console.log(element);
+        });
+      });
+    </script>
+  </body>
+</html>
