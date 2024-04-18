@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+   
+    </style>
+    <title>Country Info</title>
+  </head>
+  <body>
+    <h1>Country API</h1>
+
+    <div class="container">
+      <% countries.forEach(country => { %>
+      <div class="card">
+        <h2>Nombre: <%= country.name.common %></h2>
+        <p>Región: <%= country.region %></p>
+        <p>Subregión: <%= country.subregion %></p>
+      </div>
+      <% }) %>
+    </div>
+
+    <!-- Paginación -->
+    <div class="pagination">
+      <% if (currentPage > 1) { %>
+        <a href="/?page=<%= currentPage - 1 %>">Anterior</a>
+      <% } %>
+
+      <% let startPage = Math.max(1, currentPage - 2); // Calcula la primera página a mostrar
+         let endPage = Math.min(totalPages, startPage + 4); // Calcula la última página a mostrar
+
+         for (let i = startPage; i <= endPage; i++) { %>
+           <a href="/?page=<%= i %>" <%= i === currentPage ? 'class="active"' : '' %>><%= i %></a>
+      <% } %>
+
+      <% if (currentPage < totalPages) { %>
+        <a href="/?page=<%= currentPage + 1 %>">Siguiente</a>
+      <% } %>
+    </div>
+  </body>
+</html>
