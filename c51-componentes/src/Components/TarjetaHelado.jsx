@@ -4,9 +4,9 @@ import Styles from "./TarjetaHelado.module.css";
 export default function TarjetaHelado(props) {
   return (
     <div className={Styles.card}>
-      <h5>Nombre: {props.nombre || "Sabor no definido"}</h5>
-      <p>Stock: {props.stock}</p>
-      <p>Precio: {props.precio}</p>
+      <h5>Sabor: {props.nombre || "Sin definir"}</h5>
+      <p>Cantidad: {props.stock || 0}</p>
+      <p>Precio: ${props.precio || 0.0}</p>
     </div>
   );
 }
